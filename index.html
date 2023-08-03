@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <!--Αυτο δινει οδηγιες σχετικα με τον τροπο ελεγχου
+      των διαστασεων και της κλιμακας της σελιδας.
+      Το width=device-width οριζει τοπλατος της σελιδας
+      ωστε να ακολουθει το πλατος της οθονης της συσκευης
+      Το initial-scale=1.0 οριζει το αρχικο επιπεδο ζουμ οταν η
+      σελιδα φορτωνεται για πρωτη φορα απο το προγραμμα 
+      περιηγησης-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="email.js">
+  
+
+</head>
+
+<body>
+
+  <!--To nav οριζει ενα συνελο συνδεσμων πληγησης
+      Προοριζεται μονο για κυρια μπλοκ
+      To ul προοριζεται για ομαδοποιηση μιας συλλογης στοιχειων
+      που δεν εχουν αριθμιτικη σειρα.
+      To li  χρησημοποιειται για στοιχεια σε λιστα.
+      Πρεπει να εχουν εναν πατερα πχ ul.-->
+  <nav class="navbar">
+      <a href="#home"><img class="logo" href="#home" src="images/m.png"></a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#CV">Resume</a></li>
+        <li><a href="#Thesis">Thesis</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+  </nav>
+
+  <!--Section για δημιουργια μεμονωμενων ενοτητων σε μια σελιδα-->
+  <div id="home">
+    
+   <!--<section class="main">-->
+    <div class="main">
+      
+      <h1 class="headings"><br> SOSIPATROS PAPADATOS</h1>
+        <p style="font-size: 30px;">YOUR NEW INTERN</p>
+        
+    </div>
+     <!-- </section> -->
+   </div>
+  
+
+<!--About Section-->
+
+  <section id="about">
+    <h1 class="headings">
+      ABOUT ME
+    </h1>
+    <div id="about-details">
+      <div>
+        <img id="about-image" src="images/me.jpg" alt="">
+      </div>
+      <div id="about-text">
+          I am 24 years old senior student in <strong>Department of Informatics and Computer Engineering at University of West Atticca.</strong>
+        <br><br>Currently I seek an oportunity to work as an intern and gain experience in web development.
+        <br><br>I have already fulfilled my military obligations.
+        <br><br>My location is Corfu.
+        <br><br>In my personal time, I enjoy studying, engaging in sports, listening to the music and travelling. 
+
+      </div>
+    </div>
+  </section>
+
+<!--Education Section-->
+<section id="education">
+  <h1 class="headings">EDUCATION</h1>
+  <div id="intro-edu">
+    <div id="edu-details">
+        <br><br>Undergraduate student with a completed study program consisting of 41 courses. 
+        <br>Pending the completion of an internship
+                for graduation.
+        <br><br><br><br>    Completed a comprehensive thesis on SDN & Network Slicing.
+        <br><br><br><br>    Through the following courses, i have acquired the bellow skills:
+        <br>                Network Programming: HTML, CSS, JS
+        <br>                Object Programming: C, C++, Java
+        <br>                Database Management: MySQL
+        <br>                Digital Design: Matlab
+        <br>                Operating Sstems: Linux, Virtual Machine
+        <br>                Artificial Intelligence: Common Lisp
+        <br><br><br><br>    English: B2 Level
+    </div>
+    
+  </div>
+  
+  
+</section>
+
+<section id="CV">
+    <h1 class="headings">
+      RESUME
+    </h1>
+    <div id="cv-download">
+    <button id="cv-button-design" type="submit" onclick="window.open('CV.pdf')">Open CV</button>
+     <br><br><a href="CV.pdf" download="CV">
+      <button id="cv-button-design">Download CV</button>
+     </a>
+    </div>
+</section>
+
+<section id="Thesis">
+  <h1 class="headings">
+    THESIS
+  </h1>
+  <button id="cv-button-design" type="submit" onclick="window.open('Thesis.pdf')">Open Thesis</button>
+  <br><br><a href="Thesis.pdf" download="Thesis">
+    <button id="cv-button-design">Download Thesis</button>
+  </a>
+</section>
+
+
+  <section id="contact">
+  <h1 class="cntme">CONTACT ME</h1>
+    <div class="methods">
+
+      <div id="phone">
+        <i class="fa fa-phone" style="font-size:48px;color:blue"></i>       
+        <br><br><strong>Phone: </strong>6985889925
+        
+      </div>
+
+      <div id="address">
+        <i class="fa fa-address-card-o" style="font-size:48px;color:blue"></i>
+        <br><br><strong>Address: </strong>Corfu, 49100
+
+      </div>
+
+      <div id="email">
+        <i class="fa fa-envelope" style="font-size:48px;color:blue"></i>        
+        <br><br><strong>Email: </strong>sppapadatos@outlook.com
+
+      </div>
+
+      <div id="linkdien">
+        <i class="fa fa-linkedin-square" style="font-size:48px;color:blue;"></i>
+        <br><br><strong>Linkedin: </strong><a href="https://www.linkedin.com/in/sosipatros-papadatos/" target="_blank" style="color: black;">https://www.linkedin.com/in/sosipatros-papadatos/</a>
+      </div>
+
+    </div>
+  
+
+</section> 
+
+  <!--<section>
+    <form action="#" methof="post">
+      <label for="name">Name: </label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email: </label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message: </label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <input type="submit" value="send">
+    </form>
+  </section> -->
+
+  
+
+  
+         
+  
+
+</body>
+     
+</html>
+
+    
