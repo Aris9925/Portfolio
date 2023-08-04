@@ -362,7 +362,7 @@ z-index: -1 για την εικονα, προκειμενου να ειναι �
   height: 50px;
 }
 
-.form-row {
+/*.form-row {
   margin-bottom: 10px;
 }
 
@@ -412,7 +412,7 @@ input[type="submit"]:hover {
   background-color: #3e8e41;
 }
 
-.formcarry-container * {
+/*.formcarry-container * {
   box-sizing: border-box;
 	font-family: "Inter", sans-serif;
 
@@ -422,12 +422,12 @@ input[type="submit"]:hover {
   --color-gray: #e5e7eb;
   --color-dark-gray: #9da3ae;
   --color-pink: #edadd2;
-}
+} */
 
-.formcarry-container {
+/*.formcarry-container {
   /* container */
   --c-width: 50%;
-  --c-max-width: 500px;
+/*  --c-max-width: 500px;
 
   width: var(--c-width);
   max-width: var(--c-max-width);
@@ -506,10 +506,9 @@ input[type="submit"]:hover {
   background: #69cf9d;
 }
 
-.formcarry-alert.error {
+/*.formcarry-alert.error {
   background: #de524c;
-}
-
+} */
 
 
 
